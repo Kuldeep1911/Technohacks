@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8">
+  <title>My New Project!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   fontawesome icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<!--   Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="index.processed.css">
+</head>
+  
+<body>
+  
+ <div class="content">
+        <form action="#" method="post" id="rgstr">
+            <i class="fas fa-user-circle pavatar"></i>
+
+            <div class="rgsinputs">
+                <!-- username -->
+                <div class="rgst">
+                    <span class="inputicon" id=""><i class="fas fa-user"></i></span>
+                    <input type="text" class="rgstrinputs" name="username" id="username" placeholder="Username">
+                </div>
+                <!-- name -->
+                <div class="rgst">
+                    <span class="inputicon" id="name"><i class="fas fa-user"></i></span>
+                    <input type="text" class="rgstrinputs" name="name" id="name" placeholder="Fullname">
+                </div>
+                <!-- Email -->
+                <div class="rgst">
+                    <span class="inputicon" id="email"><i class="fas fa-envelope"></i></span>
+                    <input type="text" class="rgstrinputs" name="email" id="email" placeholder="Email">
+                </div>
+
+                <!-- phone -->
+                <div class="rgst">
+                    <span class="inputicon" id="phone"><i class="fas fa-phone-alt"></i></span>
+                    <input type="number" class="rgstrinputs" name="phone" id="phone" placeholder="Phone number">
+                </div>
+
+                <!-- Password -->
+                <div class="rgst">
+                    <span class="inputicon" id=""><i class="fas fa-lock"></i></span>
+                    <input type="password" class="password1" name="password" id="password" placeholder="Password">
+                </div>
+
+                <!-- Conf_Password -->
+                <div class="rgst">
+                    <span class="inputicon" id=""><i class="fas fa-lock"></i></span>
+                    <input type="password" class="password2" name="conf_password" id="conf_password" placeholder="Confirm password" onchange="chpassmatch();">
+                </div>
+
+
+                <!-- ShowPassword -->
+                <div class="checkingpass bottom">
+                    <div class="chlabel" for="checkpass">Show Password</div>
+                    <div class="lgncheck" id="chpass" onclick="checkpass()"><i class="fas fa-eye-slash show"></i></div>
+                </div>
+
+                <div class="btns bottom">
+                    <button type="submit" class="rgstrbtn formbtn" id="#"> Register <i class="fas fa-user-edit"></i></button>
+                    <button type="submit" class="gtlgnbtn formbtn" id="#"> Login <i class="fas fa-sign-in"></i></button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+  <!-- Scripts -->
+  <script src="index.js"></script>
+  
+</body>
+  
+</html>
